@@ -92,8 +92,11 @@ public class Main {
                 System.out.println("Ответ равен: " + res);
                 break;
             case "/":
-                res = firstNumber / secondNumber;
-                System.out.println("Ответ равен: " + res);
+                double resD = res;
+                double firstNumberD = firstNumber;
+                double secondNumberD = secondNumber;
+                resD = firstNumberD / secondNumberD;
+                System.out.println("Ответ равен: " + String.format("%.4g%n", resD));
                 break;
             default:
                 System.out.println("Введите корректные данные!");
