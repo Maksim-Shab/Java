@@ -41,15 +41,9 @@ public class Main {
         Чтобы найти остаток от деления используйте оператор % ,
         например 10%3 будет равно единице)
          */
-        int[] arr = new int[1000];
+        int num = 1000;
         String numbers = "";
-        for (int i = 0, j = 1; i < arr.length; i++) {
-            arr[i] += j;
-            j++;
-        }
-        System.out.println(Arrays.toString(arr));
-
-        for (int i = 2; i <= arr.length; i++) {
+        for (int i = 2; i <= num; i++) {
             boolean bool = true;
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
@@ -102,7 +96,6 @@ public class Main {
                 System.out.println("Введите корректные данные!");
                 calculator();
         }
-
     }
 
 }
