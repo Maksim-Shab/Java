@@ -10,7 +10,7 @@ import java.util.logging.SimpleFormatter;
 public class Main {
     public static void main(String[] args) throws IOException {
 //        System.out.println(parseString());// Данный медот можно запустить отдельно, если необходимо проверить только парсинг.
-        writerAndExceptionsFile(parseString(), "Test.txt");// Для проверки логирования необходимо ввести некорректный путь к файлу
+        writerAndExceptionsFile(parseString(), "dfgs/sdag/fdsg/df/Test.txt");// Для проверки логирования необходимо ввести некорректный путь к файлу
     }
 
     static String parseString(){
@@ -72,6 +72,6 @@ public class Main {
             logger.log(Level.WARNING, e.getMessage());
             fileHandler.setFormatter(formatter);
         }
+        fileHandler.close();
     }
-
 }

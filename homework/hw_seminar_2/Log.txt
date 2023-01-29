@@ -1,0 +1,2 @@
+янв. 29, 2023 8:03:00 AM Main writerAndExceptionsFile
+WARNING: dfgs\sdag\fdsg\df\Test.txt (Системе не удается найти указанный путь)
