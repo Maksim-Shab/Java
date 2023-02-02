@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 public class MyClassQueue {
-    private LinkedList linkedList;
+    private LinkedList<Integer> linkedList;
 
     MyClassQueue(){
         linkedList = new LinkedList();
@@ -12,11 +12,11 @@ public class MyClassQueue {
     }
 
     int dequeue(){
-        return (Integer) linkedList.pollFirst();
+        return linkedList.pollFirst();
     }
 
     int first(){
-        return (Integer) linkedList.getFirst();
+        return linkedList.getFirst();
     }
 
     public String toString() {

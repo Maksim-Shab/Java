@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        reversList(randomList(5));
+        System.out.println("Реверс: " + reversList(randomList(5)));
 //        queue();
 //        System.out.println("Сумма всех элементов равна: " + sumElements(randomList(5)));
     }
@@ -18,7 +18,7 @@ public class Main {
         return linkedList;
     }
 
-    static void reversList(LinkedList list) {
+    static LinkedList reversList(LinkedList list) {
         /*Пусть дан LinkedList с несколькими элементами.
         Реализуйте метод, который вернет “перевернутый” список.
          */
@@ -27,7 +27,7 @@ public class Main {
         for (int i = list.size(); i > 0; i--) {
             linkedList.add(list.pollLast());
         }
-        System.out.print("Реверс: " + linkedList);
+        return linkedList;
     }
 
     static void queue(){
