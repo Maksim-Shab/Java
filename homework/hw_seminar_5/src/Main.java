@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args){
-         phoneBook();
-//        popularity();
+//         phoneBook();
+        popularity();
     }
 
     static void phoneBook(){
